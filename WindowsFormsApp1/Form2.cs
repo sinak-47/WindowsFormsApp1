@@ -32,17 +32,17 @@ namespace WindowsFormsApp1
         {
             if (this.emergency.Checked)
             {
-                Form1.txt = text.Text;
+                Program.curEvent = text.Text;
             }
             else
             {
-                if (Form1.txt == "")
+                if (Program.curEvent == "")
                 {
-                    Form1.txt = text.Text;
+                    Program.curEvent = text.Text;
                 }
                 else
                 {
-                    Form1.texts.Add(text.Text);
+                    Program.events.Add(text.Text);
                 }
             }
 

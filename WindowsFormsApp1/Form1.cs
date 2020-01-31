@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,6 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        public static String txt = "";
-        public static List<String> texts = new List<String>();
         public Form1()
         {
             InitializeComponent();
@@ -21,15 +20,22 @@ namespace WindowsFormsApp1
 
         public void update_txt()
         {
-            this.Cur_Event.Text = txt;
-            if (texts.Count != 0)
+            this.Cur_Event.Text = Program.curEvent;
+            if (Program.events.Count != 0)
             {
-                this.next.Text = texts[0];
+                this.next.Text = Program.events[0];
             }
             else
             {
                 this.next.Text = "";
             }
+
+            TextWriter tw = new StreamWriter("eventsList.txt");
+            tw.WriteLine(Program.curEvent);
+            foreach (String s in Program.events)
+                tw.WriteLine(s);
+
+            tw.Close();
         }
 
         private void Order_Event_Click(object sender, EventArgs e)
@@ -59,10 +65,10 @@ namespace WindowsFormsApp1
 
         private void update_Click(object sender, EventArgs e)
         {
-            this.Cur_Event.Text = txt;
-            if (texts.Count != 0)
+            this.Cur_Event.Text = Program.curEvent;
+            if (Program.events.Count != 0)
             {
-                this.next.Text = texts[0];
+                this.next.Text = Program.events[0];
             }
             else
             {
@@ -72,20 +78,26 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (texts.Count != 0)
+            if (Program.events.Count != 0)
             {
-                txt = texts.First();
-                texts.RemoveAt(0);
-                this.Cur_Event.Text = txt;
-                if (texts.Count != 0)
+                Program.curEvent = Program.events.First();
+                Program.events.RemoveAt(0);
+                this.Cur_Event.Text = Program.curEvent;
+                if (Program.events.Count != 0)
                 {
-                    this.next.Text = texts[0];
+                    this.next.Text = Program.events[0];
                 }
                 else
                 {
                     this.next.Text = "";
                 }
             }
+            TextWriter tw = new StreamWriter("eventsList.txt");
+            tw.WriteLine(Program.curEvent);
+            foreach (String s in Program.events)
+                tw.WriteLine(s);
+
+            tw.Close();
         }
     }
 }
