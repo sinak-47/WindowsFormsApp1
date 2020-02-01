@@ -42,10 +42,9 @@
             // 
             // Order_Event
             // 
-            this.Order_Event.Location = new System.Drawing.Point(380, 93);
-            this.Order_Event.Margin = new System.Windows.Forms.Padding(2);
+            this.Order_Event.Location = new System.Drawing.Point(570, 143);
             this.Order_Event.Name = "Order_Event";
-            this.Order_Event.Size = new System.Drawing.Size(74, 34);
+            this.Order_Event.Size = new System.Drawing.Size(111, 52);
             this.Order_Event.TabIndex = 1;
             this.Order_Event.Text = "سفارش اعلان";
             this.Order_Event.UseVisualStyleBackColor = true;
@@ -53,10 +52,9 @@
             // 
             // Setup_Bluetooth
             // 
-            this.Setup_Bluetooth.Location = new System.Drawing.Point(380, 152);
-            this.Setup_Bluetooth.Margin = new System.Windows.Forms.Padding(2);
+            this.Setup_Bluetooth.Location = new System.Drawing.Point(570, 234);
             this.Setup_Bluetooth.Name = "Setup_Bluetooth";
-            this.Setup_Bluetooth.Size = new System.Drawing.Size(74, 32);
+            this.Setup_Bluetooth.Size = new System.Drawing.Size(111, 49);
             this.Setup_Bluetooth.TabIndex = 2;
             this.Setup_Bluetooth.Text = "پخش بلوتوث";
             this.Setup_Bluetooth.UseVisualStyleBackColor = true;
@@ -64,10 +62,9 @@
             // 
             // Direct_Stream
             // 
-            this.Direct_Stream.Location = new System.Drawing.Point(380, 270);
-            this.Direct_Stream.Margin = new System.Windows.Forms.Padding(2);
+            this.Direct_Stream.Location = new System.Drawing.Point(570, 415);
             this.Direct_Stream.Name = "Direct_Stream";
-            this.Direct_Stream.Size = new System.Drawing.Size(74, 34);
+            this.Direct_Stream.Size = new System.Drawing.Size(111, 52);
             this.Direct_Stream.TabIndex = 4;
             this.Direct_Stream.Text = "پخش مجزا";
             this.Direct_Stream.UseVisualStyleBackColor = true;
@@ -75,10 +72,9 @@
             // 
             // Create_Event
             // 
-            this.Create_Event.Location = new System.Drawing.Point(380, 33);
-            this.Create_Event.Margin = new System.Windows.Forms.Padding(2);
+            this.Create_Event.Location = new System.Drawing.Point(570, 51);
             this.Create_Event.Name = "Create_Event";
-            this.Create_Event.Size = new System.Drawing.Size(74, 35);
+            this.Create_Event.Size = new System.Drawing.Size(111, 54);
             this.Create_Event.TabIndex = 5;
             this.Create_Event.Text = "ثبت اعلان";
             this.Create_Event.UseVisualStyleBackColor = true;
@@ -86,10 +82,9 @@
             // 
             // Email_SMS
             // 
-            this.Email_SMS.Location = new System.Drawing.Point(380, 211);
-            this.Email_SMS.Margin = new System.Windows.Forms.Padding(2);
+            this.Email_SMS.Location = new System.Drawing.Point(570, 325);
             this.Email_SMS.Name = "Email_SMS";
-            this.Email_SMS.Size = new System.Drawing.Size(74, 31);
+            this.Email_SMS.Size = new System.Drawing.Size(111, 48);
             this.Email_SMS.TabIndex = 6;
             this.Email_SMS.Text = "ایمیل و پیامک";
             this.Email_SMS.UseVisualStyleBackColor = true;
@@ -97,27 +92,31 @@
             // 
             // Cur_Event
             // 
-            this.Cur_Event.Location = new System.Drawing.Point(509, 33);
+            this.Cur_Event.Location = new System.Drawing.Point(764, 51);
+            this.Cur_Event.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Cur_Event.Multiline = true;
             this.Cur_Event.Name = "Cur_Event";
             this.Cur_Event.ReadOnly = true;
-            this.Cur_Event.Size = new System.Drawing.Size(289, 337);
+            this.Cur_Event.Size = new System.Drawing.Size(432, 516);
             this.Cur_Event.TabIndex = 7;
             // 
             // Subscribe
             // 
-            this.Subscribe.Location = new System.Drawing.Point(380, 335);
+            this.Subscribe.Location = new System.Drawing.Point(570, 515);
+            this.Subscribe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Subscribe.Name = "Subscribe";
-            this.Subscribe.Size = new System.Drawing.Size(74, 35);
+            this.Subscribe.Size = new System.Drawing.Size(111, 54);
             this.Subscribe.TabIndex = 9;
             this.Subscribe.Text = "عضویت";
             this.Subscribe.UseVisualStyleBackColor = true;
+            this.Subscribe.Click += new System.EventHandler(this.Subscribe_Click);
             // 
             // update
             // 
-            this.update.Location = new System.Drawing.Point(593, 376);
+            this.update.Location = new System.Drawing.Point(890, 578);
+            this.update.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(111, 35);
+            this.update.Size = new System.Drawing.Size(166, 54);
             this.update.TabIndex = 10;
             this.update.Text = "وضعیت کنونی";
             this.update.UseVisualStyleBackColor = true;
@@ -125,18 +124,20 @@
             // 
             // next
             // 
-            this.next.Location = new System.Drawing.Point(25, 33);
+            this.next.Location = new System.Drawing.Point(38, 51);
+            this.next.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.next.Multiline = true;
             this.next.Name = "next";
             this.next.ReadOnly = true;
-            this.next.Size = new System.Drawing.Size(306, 337);
+            this.next.Size = new System.Drawing.Size(457, 516);
             this.next.TabIndex = 11;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(113, 376);
+            this.button1.Location = new System.Drawing.Point(170, 578);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 35);
+            this.button1.Size = new System.Drawing.Size(159, 54);
             this.button1.TabIndex = 12;
             this.button1.Text = "ارسال اعلان بعدی";
             this.button1.UseVisualStyleBackColor = true;
@@ -144,9 +145,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 459);
+            this.ClientSize = new System.Drawing.Size(1233, 706);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.next);
             this.Controls.Add(this.update);
@@ -157,7 +158,6 @@
             this.Controls.Add(this.Direct_Stream);
             this.Controls.Add(this.Setup_Bluetooth);
             this.Controls.Add(this.Order_Event);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "سرور";
             this.ResumeLayout(false);

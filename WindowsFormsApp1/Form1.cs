@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
 
         private void Order_Event_Click(object sender, EventArgs e)
         {
-
+            (new Form3()).Show();
         }
 
         private void Setup_Bluetooth_Click(object sender, EventArgs e)
@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
 
         private void Direct_Stream_Click(object sender, EventArgs e)
         {
-
+            (new Form5()).Show();
         }
 
         private void Create_Event_Click(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
 
         private void Email_SMS_Click(object sender, EventArgs e)
         {
-
+            (new Form6()).Show();
         }
 
         private void update_Click(object sender, EventArgs e)
@@ -99,6 +99,11 @@ namespace WindowsFormsApp1
                 tw.WriteLine(s);
 
             tw.Close();
+        }
+
+        private void Subscribe_Click(object sender, EventArgs e)
+        {
+            (new Form6()).Show();
         }
     }
 }

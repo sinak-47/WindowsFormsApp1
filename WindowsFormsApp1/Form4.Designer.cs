@@ -36,30 +36,28 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(207, 239);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(310, 368);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 26);
+            this.button1.Size = new System.Drawing.Size(99, 40);
             this.button1.TabIndex = 1;
             this.button1.Text = "ارسال";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(123, 21);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Location = new System.Drawing.Point(184, 32);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(259, 128);
+            this.textBox2.Size = new System.Drawing.Size(386, 195);
             this.textBox2.TabIndex = 2;
             // 
             // SMS
             // 
             this.SMS.AutoSize = true;
-            this.SMS.Location = new System.Drawing.Point(333, 172);
-            this.SMS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SMS.Location = new System.Drawing.Point(500, 265);
             this.SMS.Name = "SMS";
-            this.SMS.Size = new System.Drawing.Size(49, 17);
+            this.SMS.Size = new System.Drawing.Size(70, 24);
             this.SMS.TabIndex = 3;
             this.SMS.Text = "SMS";
             this.SMS.UseVisualStyleBackColor = true;
@@ -67,24 +65,22 @@
             // Email
             // 
             this.Email.AutoSize = true;
-            this.Email.Location = new System.Drawing.Point(123, 172);
-            this.Email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Email.Location = new System.Drawing.Point(184, 265);
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(51, 17);
+            this.Email.Size = new System.Drawing.Size(74, 24);
             this.Email.TabIndex = 4;
             this.Email.Text = "Email";
             this.Email.UseVisualStyleBackColor = true;
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 292);
+            this.ClientSize = new System.Drawing.Size(800, 449);
             this.Controls.Add(this.Email);
             this.Controls.Add(this.SMS);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form4";
             this.Text = "ایمیل و پیامک";
             this.ResumeLayout(false);
